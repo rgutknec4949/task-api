@@ -29,7 +29,7 @@ for (const yamlPath of possiblePaths) {
   try {
     if (fs.existsSync(yamlPath)) {
       specs = YAML.load(yamlPath);
-      console.log(`Loaded OpenAPI specs from: ${yamlPath}`);
+      console.log(`✓ Loaded OpenAPI specs from: ${yamlPath}`);
       break;
     }
   } catch (error) {

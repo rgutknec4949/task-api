@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "node --env-file=.env --watch src/server.js",
     "start": "node src/server.js",
+    "build": "npm run generate-docs && npx prisma generate",
+    "generate-docs": "npx @redocly/cli bundle docs/openapi.yaml -o public/bundled.yaml",
     "migrate:dev": "npx prisma migrate dev",
     "migrate:deploy": "npx prisma migrate deploy",
     "seed": "node prisma/seed.js"
