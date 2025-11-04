@@ -12,10 +12,4 @@ export async function createTask(newTask) {
   return taskRepository.create(newTask);
 }
 
-export async function updateTask(id, updateData) {
-  return taskRepository.update(id, updateData);
-}
 
-export async function deleteTask(id) {
-  return taskRepository.remove(id);
-}
