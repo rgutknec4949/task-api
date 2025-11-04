@@ -5,7 +5,7 @@ info:
 servers:
   - url: http://localhost:3000
     description: Local development server
-  - url: https://task-api-p4sb.onrender.com/
+  - url: https://task-api-p4sb.onrender.com
     description: Production server on render
 tags:
   - name: Tasks
